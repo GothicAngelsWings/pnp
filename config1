@@ -1,3 +1,7 @@
+/* ============================
+   MULTI CONFIG
+============================ */
+
 var multiConfig = {
   "THISROOM":"pandp@soi", 
   "locationColor":"White",
@@ -14,6 +18,10 @@ var multiConfig = {
   "defaultView":"VelvetCommand"
 };
 
+
+/* ============================
+   ROOM DATA
+============================ */
 
 var roomstuff = {
   "rooms":{
@@ -37,6 +45,7 @@ var roomstuff = {
   "selection":"#c4a85a"
 },
 
+
 "HallOfDevotion":{
   "rName":"The Hall of Devotion",
   "backgroundImage":"https://soi-pandp.hyperchat.com/Hallofdevotionbackground.jpg",
@@ -54,6 +63,7 @@ var roomstuff = {
   "hlink":"#e0c98f",
   "selection":"#c4a85a"
 },
+
 
 "ShadowLounge":{
   "rName":"The Shadow Lounge",
@@ -73,6 +83,7 @@ var roomstuff = {
   "selection":"#c4a85a"
 },
 
+
 "EmberStudy":{
   "rName":"The Ember Study",
   "backgroundImage":"https://soi-pandp.hyperchat.com/emberstudyback.jpg",
@@ -90,6 +101,7 @@ var roomstuff = {
   "hlink":"#e0c98f",
   "selection":"#c4a85a"
 },
+
 
 "WineCellar":{
   "rName":"The Wine Cellar",
@@ -109,6 +121,7 @@ var roomstuff = {
   "selection":"#c4a85a"
 },
 
+
 "Observatory":{
   "rName":"The Observatory",
   "backgroundImage":"https://soi-pandp.hyperchat.com/observatoryback.jpg",
@@ -125,4 +138,59 @@ var roomstuff = {
   "link":"#c4a85a",
   "hlink":"#e0c98f",
   "selection":"#c4a85a"
+}
+
+  }
+};
+
+
+/* ============================
+   SWITCH VIEW FUNCTION
+============================ */
+
+function switchView(view) {
+  const room = roomstuff.rooms[view];
+
+  // Background image
+  document.body.style.backgroundImage = "url('" + room.backgroundImage + "')";
+
+  // Border image
+  document.getElementById("borderBackground").style.backgroundImage =
+    "url('" + room.borderBGImage + "')";
+
+  // Inner table color
+  document.getElementById("innerBackground").style.backgroundColor =
+    room.tableBGColor;
+
+  // Room top
+  document.getElementById("roomtop").innerHTML = room.roomtop;
+
+  // Description
+  document.getElementById("roomDescription").innerHTML = room.description;
+
+  // Track current view
+  multiConfig.currentView = view;
+}
+
+
+/* ============================
+   INIT FUNCTION
+============================ */
+
+function init() {
+  switchView(multiConfig.defaultView);
+}
+
+
+/* ============================
+   DROPDOWN BUILDER
+============================ */
+
+function buildViewList() {
+  let html = "<select onchange='switchView(this.value)'>";
+  for (let v of multiConfig.viewList) {
+    html += "<option value='" + v + "'>" + roomstuff.rooms[v].rName + "</option>";
+  }
+  html += "</select>";
+  document.getElementById("viewList").innerHTML = html;
 }
