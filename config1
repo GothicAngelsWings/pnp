@@ -1,0 +1,128 @@
+var multiConfig = {
+  "THISROOM":"pandp@soi", 
+  "locationColor":"White",
+  "locationBackground":"green",
+  "currentView":"",
+  "viewList":[
+    "VelvetCommand",
+    "HallOfDevotion",
+    "ShadowLounge",
+    "EmberStudy",
+    "WineCellar",
+    "Observatory"
+  ],
+  "defaultView":"VelvetCommand"
+};
+
+
+var roomstuff = {
+  "rooms":{
+
+
+"VelvetCommand":{
+  "rName":"Velvet Command Room",
+  "backgroundImage":"https://soi-pandp.hyperchat.com/Velvetcommandroombackground.jpg",
+  "chatleft":"",
+  "underchat":"",
+  "roomtop":"<center><img src='https://soi-pandp.hyperchat.com/Velvetcommandroomtop.jpg'></center>",
+  "description":"The air here is warm and velvet-thick, touched by the faint scent of wine and polished wood. Heavy crimson drapes fall in perfect folds, swallowing sound and softening every edge. A single high-backed chair sits beneath a low pool of amber light — not a throne, but something far more deliberate. This is a room where silence carries weight, where a raised eyebrow speaks louder than any command. You enter softly, aware that every step is observed, measured, and quietly judged.",
+  "roombottom":"",
+  "borderBGImage":"velvetcommand_border.jpg",
+  "innerBGColor":"#4a0f1f",
+  "tableBGColor":"#3a0c15",
+  "innerHRImage":"https://soi-adrquill.hyperchat.com/divider_for_writing-removebg-preview.png",
+  "color":"#c4a85a",
+  "link":"#c4a85a",
+  "hlink":"#e0c98f",
+  "selection":"#c4a85a"
+},
+
+"HallOfDevotion":{
+  "rName":"The Hall of Devotion",
+  "backgroundImage":"https://soi-pandp.hyperchat.com/Hallofdevotionbackground.jpg",
+  "chatleft":"",
+  "underchat":"",
+  "roomtop":"<center><img src='https://soi-pandp.hyperchat.com/Hallofdevotiontop.jpg'></center>",
+  "description":"Stone walls rise around you, cool and steady, lit by rows of iron sconces that burn with unwavering flame. The floor is marked with old symbols — not of punishment, but of promise. At the far end, a raised platform waits beneath a single beam of light, as if inviting vows spoken in low, steady voices. This hall was built for ritual, for discipline of the spirit, for the quiet strength of chosen devotion. Every footstep echoes like an oath.",
+  "roombottom":"",
+  "borderBGImage":"hallofdevotion_border.jpg",
+  "innerBGColor":"#3a1f1f",
+  "tableBGColor":"#2d1a1a",
+  "innerHRImage":"https://soi-adrquill.hyperchat.com/divider_for_writing-removebg-preview.png",
+  "color":"#c4a85a",
+  "link":"#c4a85a",
+  "hlink":"#e0c98f",
+  "selection":"#c4a85a"
+},
+
+"ShadowLounge":{
+  "rName":"The Shadow Lounge",
+  "backgroundImage":"https://soi-pandp.hyperchat.com/shadowloungeback.jpg",
+  "chatleft":"",
+  "underchat":"",
+  "roomtop":"<center><img src='https://soi-pandp.hyperchat.com/shadowloungetop.jpg'></center>",
+  "description":"The lights dim the moment you enter, replaced by a warm amber glow that settles over leather and gold. This is a room built for whispers, for private invitations, for the kind of company that is chosen rather than found. The air is thick with quiet luxury — low music, soft shadows, the clink of glass somewhere just out of sight. Here, nothing is rushed. Nothing is public. Everything is intentional. You are here because someone wanted you here.",
+  "roombottom":"",
+  "borderBGImage":"shadowlounge_border.jpg",
+  "innerBGColor":"#2a1a1a",
+  "tableBGColor":"#1a1412",
+  "innerHRImage":"https://soi-adrquill.hyperchat.com/divider_for_writing-removebg-preview.png",
+  "color":"#c4a85a",
+  "link":"#c4a85a",
+  "hlink":"#e0c98f",
+  "selection":"#c4a85a"
+},
+
+"EmberStudy":{
+  "rName":"The Ember Study",
+  "backgroundImage":"https://soi-pandp.hyperchat.com/emberstudyback.jpg",
+  "chatleft":"",
+  "underchat":"",
+  "roomtop":"<center><img src='https://soi-pandp.hyperchat.com/emberstudytop.jpg'></center>",
+  "description":"A low fire crackles in the hearth, casting amber light across shelves lined with worn leather books. The scent of smoke and old paper lingers in the air, warm and familiar. Deep chairs invite you to sink into them, to read, to think, to breathe. This is a room for quiet power — not the kind that commands, but the kind that understands. A sanctuary for the mind, lit by embers that never fully die.",
+  "roombottom":"",
+  "borderBGImage":"emberstudy_border.jpg",
+  "innerBGColor":"#2b1a14",
+  "tableBGColor":"#2a120c",
+  "innerHRImage":"https://soi-adrquill.hyperchat.com/divider_for_writing-removebg-preview.png",
+  "color":"#c4a85a",
+  "link":"#c4a85a",
+  "hlink":"#e0c98f",
+  "selection":"#c4a85a"
+},
+
+"WineCellar":{
+  "rName":"The Wine Cellar",
+  "backgroundImage":"https://soi-pandp.hyperchat.com/winecellarback.jpg",
+  "chatleft":"",
+  "underchat":"",
+  "roomtop":"<center><img src='https://soi-pandp.hyperchat.com/winecellartop.jpg'></center>",
+  "description":"Cool stone walls embrace you as candlelight flickers across rows of aged bottles. The air is rich with oak, spice, and time itself. Shadows gather in the corners, soft and inviting, as if the room is waiting for a quiet confession or a shared secret. This is a place for slow moments, deep flavors, and conversations that linger long after the glass is empty.",
+  "roombottom":"",
+  "borderBGImage":"winecellar_border.jpg",
+  "innerBGColor":"#1a0f0f",
+  "tableBGColor":"#150b0b",
+  "innerHRImage":"https://soi-adrquill.hyperchat.com/divider_for_writing-removebg-preview.png",
+  "color":"#c4a85a",
+  "link":"#c4a85a",
+  "hlink":"#e0c98f",
+  "selection":"#c4a85a"
+},
+
+"Observatory":{
+  "rName":"The Observatory",
+  "backgroundImage":"https://soi-pandp.hyperchat.com/observatoryback.jpg",
+  "chatleft":"",
+  "underchat":"",
+  "roomtop":"<center><img src='https://soi-pandp.hyperchat.com/observatorytop.jpg'></center>",
+  "description":"The ceiling opens into a sweep of midnight sky, scattered with stars that seem close enough to touch. Brass instruments gleam softly in the dim blue light, waiting for hands that know how to read the heavens. The room is quiet, reverent, filled with the hush of distant constellations. This is where questions are asked in whispers — and sometimes, the sky answers.",
+  "roombottom":"",
+  "borderBGImage":"observatory_border.jpg",
+  "innerBGColor":"#0f0f1a",
+  "tableBGColor":"#0b0b1a",
+  "innerHRImage":"https://soi-adrquill.hyperchat.com/divider_for_writing-removebg-preview.png",
+  "color":"#c4a85a",
+  "link":"#c4a85a",
+  "hlink":"#e0c98f",
+  "selection":"#c4a85a"
+}
